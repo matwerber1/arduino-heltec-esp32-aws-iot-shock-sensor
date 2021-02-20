@@ -131,7 +131,7 @@ void loop(){
     digitalWrite(shockLedPin,HIGH);
     Serial.println("Shock detected...");
     writeLine("Disturbance in force!");
-    delay(500);
+    delay(1000);
     publishMessage();
     digitalWrite(shockLedPin,LOW);
   }
