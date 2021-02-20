@@ -2,3 +2,4 @@ build/
 .vscode
 my_secrets.h
 my_main.c
+arduino/*
