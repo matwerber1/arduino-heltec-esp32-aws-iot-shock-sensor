@@ -36,4 +36,4 @@ I can also use the IoT Console to publish messages. In this case, the device sub
 
 And finally, the device is subscribed to the topic and will activate a yellow LED and show the received message on the OLED dispay: 
 
-![](images/web3.jpg)
+![](images/board3.jpg)
