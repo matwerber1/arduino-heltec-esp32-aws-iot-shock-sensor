@@ -123,14 +123,14 @@ void logo(){
 
 
 void loop(){
-  client.loop();
+  client.loop();      // for MQTT to send/receive packets
 
   shockVal=digitalRead(shockPin);
   
   if(shockVal==HIGH) {
     digitalWrite(shockLedPin,HIGH);
     Serial.println("Shock detected...");
-    writeLine("Shock detected!");
+    writeLine("Disturbance in force!");
     delay(500);
     publishMessage();
     digitalWrite(shockLedPin,LOW);

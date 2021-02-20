@@ -6,6 +6,10 @@ I've wired the board with a [shock sensor from this kit](https://www.amazon.com/
 
 When a shock (movement) is detected, the LED turns on and publishes a message to AWS IoT Core. 
 
+Inspired by this blog: 
+
+* https://aws.amazon.com/blogs/compute/building-an-aws-iot-core-device-using-aws-serverless-and-an-esp32/
+
 ## Notes
 
 1. The Heltec board does require some soldering. 
