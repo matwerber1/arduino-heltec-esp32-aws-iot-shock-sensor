@@ -16,7 +16,9 @@ Inspired by this blog:
 
 2. Be sure to install the MQTT client from Arduino Library Manager authored by Joel Gaehwiler. There are a lot of MQTT libraries for Arduino, and not all of them seem to support certificate-based authentication / mTLS needed by AWS IoT Core. 
 
-3. At the moment, this is hacked together from various examples. Excuse the mess in `main.c`.
+3. I've since added a DHT11 temp/humidity sensor that publishes these sensor values to AWS IoT shadow every few seconds. This is not yet reflected in the examples below.
+
+4. At the moment, this is hacked together from various examples. Excuse the mess in `main.c`.
 
 # Demo
 
