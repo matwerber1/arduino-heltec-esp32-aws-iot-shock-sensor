@@ -16,6 +16,8 @@ Inspired by this blog:
 
 2. Be sure to install the MQTT client from Arduino Library Manager authored by Joel Gaehwiler. There are a lot of MQTT libraries for Arduino, and not all of them seem to support certificate-based authentication / mTLS needed by AWS IoT Core. 
 
+3. At the moment, this is hacked together from various examples. Excuse the mess in `main.c`.
+
 # Demo
 
 Once the board turns on, it connects to WiFi and AWS IoT, and then waits for either the sensor to activate from motion or an incoming MQTT message from AWS IOT: 
