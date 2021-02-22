@@ -18,6 +18,8 @@ Inspired by this blog:
 
 3. I've since added a DHT11 temp/humidity sensor that publishes these sensor values to AWS IoT shadow every few seconds. This is not yet reflected in the examples below.
 
+4. Also since added a third LED that is meant to be toggled on/off using the AWS IoT device shadow. 
+
 4. At the moment, this is hacked together from various examples. Excuse the mess in `main.c`.
 
 # Demo
