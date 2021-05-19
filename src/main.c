@@ -147,12 +147,21 @@ void handleShadowDelta(String &payload) {
   StaticJsonDocument<200> doc; 
   deserializeJson(doc, payload);
 
-  const bool deltaLightEnabled = doc["state"]["lightEnabled"];
-
-  if (deltaLightEnabled.isNull()) {
-    Serial.println("toggling light...");
-    enableShadowLight(deltaLightEnabled);
+  const char* error = doc["state"]["lightEnabled"];
+  if (error) {
+    Serial.println("lightEnabled is not part of shadow delta...");
   }
+  else {
+      Serial.println("toggling light...");
+      enableShadowLight(doc["state"]["lightEnabled"]);
+  }
+  
+  //const boolean deltaLightEnabled = doc["state"]["lightEnabled"];
+
+  //if (deltaLightEnabled.isNull()) {
+  //  Serial.println("toggling light...");
+  //  enableShadowLight(deltaLightEnabled);
+  //}
 
 }
 
